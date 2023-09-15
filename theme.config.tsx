@@ -1,18 +1,16 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import { Logo } from "@Components/Logo";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: Logo,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/ShihTingJustin/blog-nextra",
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/ShihTingJustin/blog-nextra",
   footer: {
-    text: 'Nextra Docs Template',
+    text: `Copyright © ${new Date().getFullYear()} Web Worker, Inc. Built with Nextra.`,
   },
-}
+};
 
-export default config
+export default config;
