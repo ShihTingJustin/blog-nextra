@@ -20,14 +20,18 @@ const config: DocsThemeConfig = {
         titleTemplate: "%s – Web Worker",
       };
     }
+
+    return {
+      titleTemplate: "Home – Web Worker",
+    };
   },
   head: function useHead() {
     const { title } = useConfig();
     const { route } = useRouter();
     const socialCard =
       route === "/" || !title
-        ? "https://blog-nextra-khaki.vercel.app/og.png"
-        : `https://blog-nextra-khaki.vercel.app/api/og?title=${title}`;
+        ? "https://www.sthdev.app/og.png"
+        : `https://www.sthdev.app/api/og?title=${title}`;
 
     return (
       <>
@@ -41,8 +45,8 @@ const config: DocsThemeConfig = {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="nextra.site" />
-        <meta name="twitter:url" content="https://nextra.site" />
+        <meta name="twitter:site:domain" content="sthdev.app" />
+        <meta name="twitter:url" content="https://www.sthdev.app" />
 
         {/* Open Graph */}
         <meta
@@ -50,6 +54,7 @@ const config: DocsThemeConfig = {
           content={title ? title + " – Web Worker" : "Web Worker"}
         />
         <meta name="og:image" content={socialCard} />
+        <meta name="og:url" content="https://www.sthdev.app" />
         <meta name="og:description" content="Two cents from a web worker." />
 
         {/* LinkedIn */}
@@ -58,10 +63,7 @@ const config: DocsThemeConfig = {
           content={title ? title + " – Web Worker" : "Web Worker"}
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://blog-nextra-khaki.vercel.app"
-        />
+        <meta property="og:url" content="https://www.sthdev.app" />
         <meta
           property="og:description"
           content="Two cents from a web worker."
