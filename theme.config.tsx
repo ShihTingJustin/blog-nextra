@@ -4,6 +4,9 @@ import { Logo } from "@Components/Logo";
 import { useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 
+const description =
+  "Insights from a web worker: Dive into quick notes and curated internet resources from a web development journey, alongside organized blog articles on web techniques, career growth, and insightful interviews.";
+
 const config: DocsThemeConfig = {
   logo: Logo,
   project: {
@@ -39,7 +42,7 @@ const config: DocsThemeConfig = {
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
-        <meta name="description" content="Two cents from a web worker." />
+        <meta name="description" content={description} />
         <meta name="apple-mobile-web-app-title" content="Web Worker" />
 
         {/* Twitter */}
@@ -55,7 +58,7 @@ const config: DocsThemeConfig = {
         />
         <meta name="og:image" content={socialCard} />
         <meta name="og:url" content="https://www.sthdev.app" />
-        <meta name="og:description" content="Two cents from a web worker." />
+        <meta name="og:description" content={description} />
 
         {/* LinkedIn */}
         <meta
@@ -64,10 +67,7 @@ const config: DocsThemeConfig = {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.sthdev.app" />
-        <meta
-          property="og:description"
-          content="Two cents from a web worker."
-        />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={socialCard} />
 
         {/* Favicons */}
