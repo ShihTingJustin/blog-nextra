@@ -9,6 +9,9 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/ShihTingJustin/blog-nextra",
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
   docsRepositoryBase: "https://github.com/ShihTingJustin/blog-nextra",
   useNextSeoProps() {
     const { asPath } = useRouter();
