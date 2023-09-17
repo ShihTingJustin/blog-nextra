@@ -11,6 +11,13 @@
       "typesetting": "article"
     }
   },
+  "blogs": {
+    "title": "Blogs",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
