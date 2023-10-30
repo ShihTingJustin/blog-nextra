@@ -18,7 +18,7 @@ tags: [ac, alphacamp, bootcamp, careerChange, softwareEngineer]
 
 在寫老爸私房錢的作業時，想要操作兩個 Schema 來 create 消費的資料及種類的資料，想將`Category.find()`撈出來的資料拿到`Record.create()`裡面用
 
-```javascript
+```js copy showLineNumbers
 //recordSeeder.js
 let category = []
 Category.find()
@@ -45,7 +45,7 @@ db.once('open', () => {
 
 結果發現不行，只能把`Record.create()`寫在`Category.find(`的 `.then()`裡面。如果還有要執行的動作，就要一直`.then()`下去...
 
-```javascript
+```js copy showLineNumbers
 db.once('open', () => {
   console.log('mongodb connected!');
 
@@ -86,7 +86,7 @@ db.once('open', () => {
 
 好在這個專案我已經逐步摸索出非同步的寫法，現在學期三的作業也需要用到非同步的寫法，使用起來就更加順手，不過還是要在學期三從頭學習 callback, Promise, async / await 演進的過程與精進的寫法。
 
-```javascript
+```js copy showLineNumbers
 async function shortenAsyncAwait() {
   const value = await urlCheck();
   const value1 = await generateShortURL(value, url);

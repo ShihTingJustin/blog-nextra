@@ -71,7 +71,7 @@ Output: 3
 4. 讓`slow`退回原點`nums[0]`，`fast`保持在原地不動
 5. 然後再次利用迴圈讓龜兔開始跑，**但這次龜兔的速度要是一致的，再次相遇時，就是環的起點，也代表重複的數字**
 
-```javascript
+```js copy showLineNumbers
 var findDuplicate = function (nums) {
   let slow = nums[0];
   let fast = nums[0];
@@ -119,7 +119,7 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 
 這題對空間複雜度有相同的要求，因此也相當適合使用快慢指針，基本上邏輯相同，就不再贅述了，如果有學過 Linked List 的人可以順便練習一下。
 
-```javascript
+```js copy showLineNumbers
 var hasCycle = function (head) {
   let fast = head;
   let slow = head;
@@ -154,7 +154,7 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 
 ![0_FHndGxUHRjw2FvcK](https://i.imgur.com/Rd1i1Pv.png)
 
-```javascript
+```js copy showLineNumbers
 var detectCycle = function (head) {
   let fast = head;
   let slow = head;

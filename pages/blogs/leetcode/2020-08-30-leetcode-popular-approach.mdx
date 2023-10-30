@@ -39,7 +39,7 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1]
 
 不過使用巢狀迴圈的缺點就是很費時，時間複雜度也會變成 O(n^2)，所以可以看到 Runtime 只比 17.9% 的人快。Memory Usage 則是因為沒有宣告新的變數，直接使用迴圈的 index 所以表現不錯。
 
-```javascript
+```js copy showLineNumbers
 var twoSum = function (nums, target) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i; j < nums.length; j++) {
@@ -59,7 +59,7 @@ var twoSum = function (nums, target) {
 
 與暴力解相比，Hash Table 的優點是有效降低時間複雜度(O(n))，可以看到 Runtime 快很多，代價是要使用比較多的記憶體空間。**Hash Table 最大的好處是 input 不需要是 sorted array 也能使用。**
 
-```javascript
+```js copy showLineNumbers
 var twoSum = function (nums, target) {
   let map = {};
   for (let i = 0; i < nums.length; i++) {
@@ -106,7 +106,7 @@ A solution set is:
 
 這個方法最重要的是 input 需為 sorted array，讓 nums 由小排到大，這樣當 num1 固定時，就可以讓 num2, num3 也就是左右指針，從 num1 之後的數字序列的「頭」和「尾」向中間「夾」。
 
-```javascript
+```js copy showLineNumbers
 /**
  * @param {number[]} nums
  * @return {number[][]}

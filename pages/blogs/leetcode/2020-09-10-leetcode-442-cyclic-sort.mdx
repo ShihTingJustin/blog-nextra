@@ -30,7 +30,7 @@ Reference #1 是 AC 的學長 Danny 寫的文章，由於他的範例設計得�
 
 Cyclic Sort 是利用陣列元素當作 targetIndex，也就是元素應該要在的位置；若元素不在該在的位置，與該位置的元素互換位置，若元素已經在對的位置，則往下一個元素檢查。
 
-```javascript
+```js copy showLineNumbers
 function cyclicSort(nums) {
   let index = 0; // 目前指向的元素
 
@@ -80,7 +80,7 @@ Output:
 1. 用 Cyclic Sort 讓輸入的陣列排序
 2. 找出陣列中與 index 不符合的元素
 
-```javascript
+```js copy showLineNumbers
 var findDuplicates = function (nums) {
   let result = [];
   let index = 0;

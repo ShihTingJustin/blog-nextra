@@ -28,7 +28,7 @@ tags: [深拷貝, deepCopy, deep, copy]
 1. Lodash
 2. 轉 JSON 字串再轉回來
 
-```javascript=
+```js copy showLineNumbers=
 const copy = JSON.parse(JSON.stringify(original));
 ```
 
@@ -41,7 +41,7 @@ const copy = JSON.parse(JSON.stringify(original));
 - Date : 型別會由 Data 轉成 string。
 - function : 會連同 key 一起消失。
 
-```javascript
+```js copy showLineNumbers
 const originalData = {
   undefined: undefined, // undefined values will be completely lost, including the key containing the undefined value
   notANumber: NaN, // will be forced to null
