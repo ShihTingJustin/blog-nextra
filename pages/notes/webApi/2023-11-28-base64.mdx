@@ -11,6 +11,10 @@ The `btoa()` method creates a Base64-encoded ASCII string from a binary string (
 
 You can use this method to encode data which may otherwise cause communication problems, transmit it, then use the `atob()` method to decode the data again.
 
+```js
+const encodedData = btoa("Hello, world"); // encode a string
+const decodedData = atob(encodedData); // decode the string
+```
 
 ### Reference
 - https://developer.mozilla.org/en-US/docs/Web/API/btoa
