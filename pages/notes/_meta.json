@@ -1,7 +1,4 @@
 {
-  "cs": {
-    "title": "Computer Science"
-  },
   "git": {
     "title": "Git"
   },
@@ -11,16 +8,19 @@
   "react": {
     "title": "React.js"
   },
+  "webApi": {
+    "title": "Web API"
+  },
+  "cs": {
+    "title": "Computer Science"
+  },
   "resources": {
     "title": "Resources"
-  },
-  "rfc": {
-    "title": "RFC"
   },
   "seo": {
     "title": "SEO"
   },
-  "webApi": {
-    "title": "Web API"
+  "rfc": {
+    "title": "RFC"
   }
 }
