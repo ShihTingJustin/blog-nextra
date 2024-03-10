@@ -1,14 +1,7 @@
-// pages/_app.js
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import type { AppProps } from "next/app";
 
-const App = ({ Component, pageProps }) => {
-  return (
-    <>
-      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
-      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
-      <Component {...pageProps} />
-    </>
-  );
+const App = ({ Component, pageProps }: AppProps) => {
+  return <Component {...pageProps} />;
 };
 
 export default App;
